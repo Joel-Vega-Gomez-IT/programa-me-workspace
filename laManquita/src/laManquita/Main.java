@@ -12,7 +12,6 @@ public class Main {
 		final String[] letras = {"A", "B", "C", "D", "E", "F" ,"G" ,"H", "I", "J", "K", "L", "M" ,"N" ,"O", "P", "Q", "R", "S", "T" ,"U" ,"V", "W", "X", "Y", "Z"};
 		
 		String entradaUsuario;
-//		JIJIJIJAAAA!!!!
 		do {
 			entradaUsuario = entrada.readLine();
 		} while (entradaUsuario.length() > 200);
