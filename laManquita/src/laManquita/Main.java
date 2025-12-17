@@ -1,9 +1,9 @@
-package las_Campanas_De_La_Manquita;
+package laManquita;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Main2 {
+public class Main {
 
 	public static void main(String[] args) throws Exception{
 		
@@ -12,7 +12,7 @@ public class Main2 {
 		final String[] letras = {"A", "B", "C", "D", "E", "F" ,"G" ,"H", "I", "J", "K", "L", "M" ,"N" ,"O", "P", "Q", "R", "S", "T" ,"U" ,"V", "W", "X", "Y", "Z"};
 		
 		String entradaUsuario;
-				
+//		JIJIJIJAAAA!!!!
 		do {
 			entradaUsuario = entrada.readLine();
 		} while (entradaUsuario.length() > 200);
