@@ -6,29 +6,24 @@ import java.io.InputStreamReader;
 public class Main {
 	public static void main(String[] args) throws Exception {
 
-		BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 
 		while (true) {
 
-			int casosDePrueba = Integer.parseInt(entrada.readLine());
+			int num_ramales = Integer.parseInt(input.readLine());
 
-			if (casosDePrueba == 0)
+			if (num_ramales == 0) { break; }
 
-				break;
+			Ramales[] array_ramales = new Ramales[num_ramales];
 
-			Ramales[] ramalesArr = new Ramales[casosDePrueba];
+			for (int i = 0; i < num_ramales; i++) {
 
-			for (int i = 0; i < casosDePrueba; i++) {
-
-				String entradaUsuario = entrada.readLine();
-
-				String[] entradaArr = entradaUsuario.split(" ");
-
-				ramalesArr[i] = new Ramales(entradaArr[0], entradaArr[1], Integer.parseInt(entradaArr[2]));
+				String[] user_input = input.readLine().split(" ");
+				array_ramales[i] = new Ramales(user_input[0], user_input[1], Integer.parseInt(user_input[2]));
 
 			}
 
-			for (int i = 0; i < ramalesArr.length; i++) {
+			for (int i = 0; i < array_ramales.length; i++) {
 
 			}
 
@@ -39,17 +34,13 @@ public class Main {
 	public static class Ramales {
 
 		private String nombre;
-
 		private int distancia;
-
 		private String tipo;
 
 		public Ramales(String nombre, String tipo, int distancia) {
 
 			this.nombre = nombre;
-
 			this.distancia = distancia;
-
 			this.tipo = tipo;
 
 		}
