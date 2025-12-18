@@ -6,20 +6,20 @@ import java.io.InputStreamReader;
 public class Main {
 
 	public static void main(String[] args) throws Exception{
+		final String[] letras = {"A", "B", "C", "D", "E", "F" ,"G" ,"H", "I", "J", "K", "L", "M" ,"N" ,"O", "P", "Q", "R", "S", "T" ,"U" ,"V", "W", "X", "Y", "Z"};
 		
 		BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 		
-		final String[] letras = {"A", "B", "C", "D", "E", "F" ,"G" ,"H", "I", "J", "K", "L", "M" ,"N" ,"O", "P", "Q", "R", "S", "T" ,"U" ,"V", "W", "X", "Y", "Z"};
-		
-		String entradaUsuario;
-		do {
-			entradaUsuario = entrada.readLine();
-		} while (entradaUsuario.length() > 200);
+		String entradaUsuario = null;
 		
 		int llargTotal = entradaUsuario.length()/2;
 
 		int contadorDeLetraMasRepetida=0;
 		int aux=0;
+		
+		do {
+			entradaUsuario = entrada.readLine();
+		} while (entradaUsuario.length() > 200);
 		
 		for (int i=0; i < letras.length; i++) {
 			aux = 0;
