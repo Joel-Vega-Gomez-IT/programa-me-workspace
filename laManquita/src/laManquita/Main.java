@@ -17,8 +17,6 @@ public class Main {
 		} while (entradaUsuario.length() > 200);
 		
 		int llargTotal = entradaUsuario.length()/2;
-		
-		
 
 		int contadorDeLetraMasRepetida=0;
 		int aux=0;
@@ -31,14 +29,11 @@ public class Main {
 				}
 			}
 			
-			
 			if (contadorDeLetraMasRepetida < aux) {
 				contadorDeLetraMasRepetida = aux;
 				aux = 0;
 			}
 		}
-		
-		
 		
 		if ((contadorDeLetraMasRepetida+1)==llargTotal) {
 			System.out.println("Si");
