@@ -1,5 +1,7 @@
 package ordenandoRamales;
 
+//EMPEZADO: EL 17/12/25
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -22,7 +24,7 @@ public class Main {
 				array_ramales[i] = new Ramales(user_input[0], user_input[1], Integer.parseInt(user_input[2]));
 
 			}
-
+			
 			for (int i = 0; i < array_ramales.length; i++) {
 
 			}

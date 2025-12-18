@@ -1,6 +1,7 @@
 package laManquita;
 
-// HECHO EL 17/12/25
+// EMPEZADO: EL 17/12/25
+// HECHO: EL 17/12/25
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
