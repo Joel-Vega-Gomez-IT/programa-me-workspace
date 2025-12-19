@@ -23,10 +23,8 @@ public class Main {
 			Ramales[] array_ramales = new Ramales[num_ramales];
 
 			for (int i = 0; i < num_ramales; i++) {
-
 				String[] user_input = input.readLine().split(" ");
 				array_ramales[i] = new Ramales(user_input[0], user_input[1], Integer.parseInt(user_input[2]));
-
 			}
 		    
 		    for (int i = 0; i < array_ramales.length; i++) {
@@ -69,7 +67,6 @@ public class Main {
 			this.nombre = nombre;
 			this.distancia = distancia;
 			this.tipo = tipo;
-
 		}
 
 		public int getDistancia() {
